@@ -15,9 +15,8 @@ A lightweight contact form that skips the backend entirely — submissions are v
 - Accessible markup — proper `<label>`s, `aria-invalid` states, focus rings, `aria-live` toast announcements
 - Zero dependencies, zero backend — works from a single static page
 
-![Validation error states](./screenshots/form-validation.png)
+![Validation error states](Assets/form-validation.png)
 
-![Success toast after sending](./screenshots/toast-success.png)
 
 ## 🛠️ Built With
 
