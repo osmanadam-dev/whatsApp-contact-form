@@ -2,7 +2,7 @@
 
 A lightweight contact form that skips the backend entirely — submissions are validated client-side, then handed straight to WhatsApp as a pre-filled message via the [wa.me](https://faq.whatsapp.com/425247423114725) link scheme.
 
-![Filled out contact form](./screenshots/form-filled.png)
+![Filled out contact form](Assets/form-validation1.png)
 
 ## ✨ Features
 
