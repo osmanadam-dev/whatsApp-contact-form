@@ -123,10 +123,6 @@ After a valid submission, `window.open()` is called to launch WhatsApp in a new 
 | No spam protection — any script could fire `sendToWhatsApp()` | Hidden honeypot field silently rejects bot submissions |
 | No feedback after clicking submit | Success/error toast with `aria-live` announcement, popup-blocked detection |
 
-## 📌 Roadmap
-
-- [ ] Searchable/filterable country dropdown for longer lists
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
