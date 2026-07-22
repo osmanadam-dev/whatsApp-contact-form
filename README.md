@@ -107,21 +107,6 @@ After a valid submission, `window.open()` is called to launch WhatsApp in a new 
 6. A `wa.me` URL pointed at **your** configured number is opened in a new tab with `noopener,noreferrer` for security
 7. `window.open()`'s return value is checked — if the browser blocked the pop-up it returns `null`/`undefined`, which triggers the error toast instead of a false "success" message; if it opened, the success toast shows and the form resets
 
-## 🔧 What Changed From the Original Version
-
-| Before | After |
-|---|---|
-| Inline `onclick="sendToWhatsApp()"` | Proper `submit` event listener, no inline JS |
-| No validation — empty/invalid fields were sent anyway | Per-field validation with inline error messages |
-| Manual string concatenation, no encoding | `encodeURIComponent()` — safe with `&`, `#`, accents, newlines |
-| Hardcoded `%0a` for line breaks | Real `\n` characters, encoded properly |
-| No `<label>` elements | Full `<label>` + `aria-invalid` support |
-| `window.open(url, '_blank')` (no security attrs) | Added `noopener,noreferrer` |
-| Plain CSS values | CSS custom properties, focus rings, error states |
-| Phone field accepted any string with an optional `+` | Dedicated country-code `<select>` (24 countries) + validated national number |
-| No spam protection — any script could fire `sendToWhatsApp()` | Hidden honeypot field silently rejects bot submissions |
-| No feedback after clicking submit | Success/error toast with `aria-live` announcement, popup-blocked detection |
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
